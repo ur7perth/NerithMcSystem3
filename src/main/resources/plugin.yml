@@ -1,0 +1,30 @@
+name: NerithMcCombat
+version: '${project.version}'
+main: com.nerith.mccombat.NerithMcCombat
+api-version: '1.21'
+author: Nerith
+description: Combat tag, spawn and death regions
+
+commands:
+  setspawn:
+    description: Set the spawn location
+    permission: nerithmccombat.admin
+  spawn:
+    description: Teleport to spawn
+  deathwand:
+    description: Get the death region wand
+    permission: nerithmccombat.admin
+  deathregion:
+    description: Create/delete death regions
+    permission: nerithmccombat.admin
+    usage: /deathregion <name|delete <name>|list>
+  nmcreload:
+    description: Reload the plugin
+    permission: nerithmccombat.admin
+
+permissions:
+  nerithmccombat.admin:
+    default: op
+  nerithmccombat.bypass:
+    description: Not killed by death regions
+    default: false
